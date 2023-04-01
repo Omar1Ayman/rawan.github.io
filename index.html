@@ -1,44 +1,307 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Company</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Dentist</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">My Company</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-0">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="letter-spacing: 4px; ">
+        <img src="./images/logo.png" width="100" height="50" alt="" style="background: transparent;">
+         <!-- <b class="mx-3">Dentist</b> -->
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto text-monospace font-weight-bold">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+<div class="slider">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active text-dark">
+        <img src="./images/slider/1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block text-dark">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
         </div>
-      </nav>
+      </div>
+      <div class="carousel-item text-dark">
+        <img src="./images/slider/2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block text-dark">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item text-dark">
+        <img src="./images/slider/3.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block text-dark">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
+  </div>
+</div>
+
+<div class="services" id="services">
+  <div class="container mt-5">
+    <h1 class="special-heading">Services</h1>
+    <p>12 Common Dental Services You Should Know.</p>
+    <div class="row my-3">
+
+      <div class="col-lg-3 p-1">
+          <div class="card shadow">
+            <img src="./images/services/1.jpg" class="mb-2" width="100%" height="200px" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Dental Bonding</h5>
+              <p class="text-muted text-truncate card-text">
+                Dental bonding is a technique used to correct imperfections with your teeth to give you a better-looking smile. Bonding is used to repair chipped teeth, decayed teeth, and cracked teeth. Bonding involves applying a tooth-colored resin material to the teeth and hardening it with a light. This bonds the material to the teeth to improve a person's smile. 
+              </p>
+            </div>
+          </div>
+      </div>
+      <div class="col-lg-3 p-1">
+        <div class="card shadow">
+          <img src="./images/services/2.jpg" class="mb-2" width="100%" height="200px" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Dental Crowns</h5>
+          <p class="text-muted text-truncate card-text">
+            A dental crown is a dental prosthesis which replaces the visible part of a tooth. A dental crown functions to strengthen teeth, restore their original shape, and improve their appearance. Dental crowns are also used to hold dental bridges in place and cover dental implants.
+          </p>
+        </div>
+        </div>
+      </div>
+      <div class="col-lg-3 p-1">
+       <div class="card shadow">
+        <img src="./images/services/3.jpg" class="mb-2" width="100%" height="200px" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Bridgework</h5>
+          <p class="text-muted text-truncate card-text">
+            A dental bridge is a structure between two dental crowns to 
+            fill the gap between missing teeth. A bridge can be supported by your teeth, implants, or a combination of teeth and implants. A dental bridge can restore your smile, improve your appearance, and take years off your look. Who doesn't want to look better- or younger?
+          </p>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-3 p-1">
+       <div class="card shadow">
+        <img src="./images/services/4.jpg" class="mb-2" width="100%" height="200px" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Cosmetic Fillings</h5>
+          <p class="text-muted text-truncate card-text">
+            Cosmetic fillings, or tooth- colored fillings, are made of composite resin and glass particles. They are cemented onto the existing teeth using a bonding agent. Cosmetic fillings can improve the appearance of your smile. Unlike silver-colored fillings, cosmetic fillings look just like your natural teeth.
+          </p>
+        </div>
+       </div>
+      </div>
+    </div>
+    <div class="row my-3">
+      <div class="col-lg-3 p-1">
+          <div class="card shadow">
+            <img src="./images/services/5.jpg" class="mb-2" width="100%" height="200px" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Invisalign</h5>
+              <p class="text-muted text-truncate card-text">
+                Many people are discovering the benefits of veneers. Veneers are thin coverings that are placed over the front part of the teeth. Veneers are placed on teeth that are crooked, poorly shaped, or severely discolored. They may also be used to lighten teeth that are yellow or have a gray cast
+              </p>
+            </div>
+          </div>
+      </div>
+      <div class="col-lg-3 p-1">
+        <div class="card shadow">
+          <img src="./images/services/6.jpg" class="mb-2" width="100%" height="200px" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Teeth Cleanings</h5>
+          <p class="text-muted text-truncate card-text">
+            You should visit the dentist every six months for teeth cleanings. Tartar is a hard buildup of plaque that forms on the teeth. Tartar forms below and above the gum line. The only way to remove tartar is to see a dentist for a professional teeth cleaning. Regular teeth cleanings are important to maintaining healthy teeth and gums.
+          </p>
+        </div>
+        </div>
+      </div>
+      <div class="col-lg-3 p-1">
+       <div class="card shadow">
+        <img src="./images/services/7.jpg" class="mb-2" width="100%" height="200px" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Dentures</h5>
+          <p class="text-muted text-truncate card-text">
+            Have you lost most or all of your teeth? Dentures are removable appliances that can replace missing teeth. A complete denture is used when all of the patient's teeth are missing. A partial denture is used when only some of the teeth are missing. Today's dentures are natural looking and more comfortable than ever.
+          </p>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-3 p-1">
+       <div class="card shadow">
+        <img src="./images/services/8.jpg" class="mb-2" width="100%" height="200px" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Root Canal Therapy</h5>
+          <p class="text-muted text-truncate card-text">
+            In the past, diseased teeth often had to be extracted. Today, they often can be saved through root canal therapy. A root canal is a dental procedure that is used to repair teeth that are infected or badly decayed. Some people fear root canal treatments because they assume they are painful. Most people report that the procedure is no more painful than having a filling placed.
+          </p>
+        </div>
+       </div>
+      </div>
+    </div>
+    <div class="row my-3">
+      <div class="col-lg-3 p-1">
+          <div class="card shadow">
+            <img src="./images/services/9.jpeg" class="mb-2" width="100%" height="200px" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Dental Veneers</h5>
+              <p class="text-muted text-truncate card-text">
+                Many people are discovering the benefits of veneers. Veneers are thin coverings that are placed over the front part of the teeth. Veneers are placed on teeth that are crooked, poorly shaped, or severely discolored. They may also be used to lighten teeth that are yellow or have a gray cast.
+              </p>
+            </div>
+          </div>
+      </div>
+      
+      <div class="col-lg-3 p-1">
+        <div class="card shadow">
+          <img src="./images/services/10.jpg" class="mb-2" width="100%" height="200px" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Dental Sealants</h5>
+          <p class="text-muted text-truncate card-text">
+            Sealants are made of plastic and are applied to the chewing surfaces of the back teeth to prevent tooth decay. Sealants are painted on as a liquid and harden to form a shield over the teeth. Having sealants put on your teeth will save you money in the long run by avoiding dental fillings, crowns, and other dental treatments.
+          </p>
+        </div>
+        </div>
+      </div>
 
 
+      <div class="col-lg-3 p-1">
+       <div class="card shadow">
+        <img src="./images/services/6.jpg" class="mb-2" width="100%" height="200px" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Teeth Whitening</h5>
+          <p class="text-muted text-truncate card-text">
+            Want a whiter smile? Your main options are at-home and in-office bleaching. At-home teeth whitening involves custom-made dental trays filled with hydrogen peroxide gel that you can use at home. For in-office bleaching, your dentist will combine hydrogen peroxide gel with a light source to speed up the whitening process
+          </p>
+        </div>
+       </div>
+      </div>
+
+      <div class="col-lg-3 p-1">
+       <div class="card shadow">
+        <img src="./images/services/12.jpg" class="mb-2" width="100%" height="200px" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Tooth Extractions</h5>
+          <p class="text-muted text-truncate card-text">
+            A tooth extraction, or dental extraction, is the removal of a tooth from its socket in the bone. There are a number of reasons why tooth removal may be necessary. An extraction may be necessary if your tooth is so damaged that it can't be fixed with a dental restoration. In some cases, dentists extract teeth to prepare the patient's mouth for orthodontic treatment.
+          </p>
+        </div>
+       </div>
+      </div>
 
       
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    </div>
+  </div>
+</div>
+
+<div class="about bg-light" id="about">
+  <div class="container">
+    <h1 class="special-heading">About Us</h1>
+    <p>Dentist</p>
+  <div class="row mt-5">
+    <div class="col-lg-6">
+      <img src="./images/about/1.jpg" width="100%" height="100%" alt="">
+    </div>
+    <div class="col-lg-6">
+      <h2>Dentist</h2>
+      <p class="text-muted">
+        Dentist
+        A dentist is a healthcare provider who diagnoses and treats oral health conditions. Taking good care of your teeth and gums can help you reduce your risk for other serious health conditions, like heart disease and stroke. You should visit a dentist regularly for routine exams and cleanings.
+      </p>
+      <h2>What is a dentist?</h2>
+      <p class="text-muted">
+        A dentist — sometimes called a general dentist or family dentist — is a healthcare provider who diagnoses and treats oral health conditions. Dentists help keep your teeth and gums healthy with regular dental check-ups and cleanings. They can also perform a variety of oral health treatments, including dental fillings, crowns and bridges.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="contact py-5" id="contact">
+  <div class="container">
+    <h1 class="special-heading">Contact Us</h1>
+    <p>contact</p>
+  <div class="row mt-5">
+    <div class="col-lg-6">
+      <img src="./images/about/1.png" width="100%" alt="">
+    </div>
+    <div class="col-lg-6">
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Full Name:</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+
+        <div class="mb-3">
+          <label for="message" class="form-label">Message:</label>
+          <textarea class="form-control" id="message" cols="30" rows="3"></textarea>
+        </div>
+       
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+  <!-- Start Footer -->
+  <div class="footer">
+    &copy; 2021 <span>Leon</span> All Right Reserved
+    <div class="social">
+        <span class="mx-2">Find Us On Social Networks</span>
+        <p class="fa-brands fa-youtube"></p>
+        <p class="fa-brands fa-facebook"></p>
+        <p class="fa-brands fa-square-twitter"></p>
+    </div>
+</div>
+<!-- End Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
   </body>
 </html>
