@@ -425,6 +425,13 @@ i {
     }
   }
   
+  .animation{
+    transition: all .5s;
+  }
+  .animation:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+  }
 /* End Contact */
 
 /* Start Footer */
